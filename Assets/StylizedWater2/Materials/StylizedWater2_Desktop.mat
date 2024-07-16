@@ -10,6 +10,8 @@ Material:
   m_Name: StylizedWater2_Desktop
   m_Shader: {fileID: -6465566751694194690, guid: d7b0192b9bf19c949900035fa781fdc4,
     type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ADVANCED_SHADING
   - _CAUSTICS
@@ -24,6 +26,7 @@ Material:
   - ADVANCED_LIGHTING
   - _DEPTHEXP_ON
   - _DEPTH_TEX
+  - _RECEIVEDYNAMICEFFECTS_ON
   - _SIMPLE_LIGHTING
   - _VERTEXCOLORWAVEFLATTENING_ON
   - _WORLDSPACEUV_ON
@@ -34,6 +37,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: _TranslucencyStrength
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -218,6 +222,7 @@ Material:
     - _PointSpotLightReflectionSize: 0
     - _PointSpotLightReflectionStrength: 10
     - _QueueOffset: 0
+    - _ReceiveDynamicEffects: 1
     - _ReceiveShadows: 1
     - _ReflectionBlur: 0
     - _ReflectionDistortion: 0.146
@@ -247,7 +252,7 @@ Material:
     - _SlopeThreshold: 0.25
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SparkleIntensity: 0
+    - _SparkleIntensity: 0.25
     - _SparkleSize: 0.302
     - _SpecularHighlights: 1
     - _SpecularReflectionsOn: 1
@@ -273,12 +278,12 @@ Material:
     - _VertexColorDepth: 0
     - _VertexColorFoam: 0
     - _VertexColorWaveFlattening: 1
-    - _WaveCount: 2
-    - _WaveDistance: 0.775
-    - _WaveHeight: 0.1
-    - _WaveNormalStr: 0.1
+    - _WaveCount: 3
+    - _WaveDistance: 0.9
+    - _WaveHeight: 0.6
+    - _WaveNormalStr: 0.8
     - _WaveSpeed: 2.3999996
-    - _WaveSteepness: 0
+    - _WaveSteepness: 0.1
     - _WaveTint: 0
     - _WavesOn: 1
     - _WorkflowMode: 1
