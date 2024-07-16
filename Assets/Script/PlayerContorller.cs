@@ -39,9 +39,9 @@ public class PlayerContorller : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
+        // Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
         
-        transform.position += dir * (_moveSpeed * Time.deltaTime);
+        transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * _moveSpeed * Time.deltaTime);
         
         if (Input.GetKeyUp(KeyCode.Space) && !_isJump)
         {
