@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
 {
     
     public GameObject deathPanel;
+    public GameObject inGamePanel;
     public GameObject pausePanel;
     public GameObject retryBtn;
     public GameObject player;
@@ -21,12 +22,14 @@ public class UIManager : MonoBehaviour
     
     private void Start()
     {
+        inGamePanel.SetActive(true);
         deathPanel.SetActive(false);
         _playerContorller = GameObject.FindWithTag("Player").GetComponent<PlayerContorller>();
     }
 
     public void DeathPanel()
     {
+        inGamePanel.SetActive(false);
         deathPanel.SetActive(true);
     }
     

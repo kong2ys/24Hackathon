@@ -673,6 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathPanel: {fileID: 256202520223812341}
+  inGamePanel: {fileID: 2184723941570334567}
   pausePanel: {fileID: 7718100046170909387}
   retryBtn: {fileID: 5027832153624376713}
   player: {fileID: 0}
@@ -1540,6 +1541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathPanel: {fileID: 256202520223812341}
+  inGamePanel: {fileID: 2184723941570334567}
   pausePanel: {fileID: 7718100046170909387}
   retryBtn: {fileID: 5027832153624376713}
   player: {fileID: 0}
