@@ -8,6 +8,25 @@ public class GameManager : MonoBehaviour
 
     private UIManager _uiManager;
     
+    #region Singleton
+
+    static public GameManager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    #endregion
+    
 
     public UIManager uiManager;
     // Start is called before the first frame update
