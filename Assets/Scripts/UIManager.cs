@@ -17,8 +17,12 @@ public class UIManager : MonoBehaviour
     public GameObject continueBtn;
 
     public TextMeshProUGUI deathCount;
+    public TextMeshProUGUI gameTime;
     
     private PlayerContorller _playerContorller;
+
+    private float sec;
+    private int min;
     
     private void Start()
     {
@@ -78,5 +82,19 @@ public class UIManager : MonoBehaviour
         }
 
         deathCount.text = GameManager.instance.DethCount.ToString();
+
+        #region Timer
+
+        sec += Time.deltaTime;
+        if (sec >= 60f)
+        {
+            min += 1;
+            sec = 0;
+        }
+
+        gameTime.text = string.Format("{0:D2}:{1:D2}", min, (int)sec);
+
+        #endregion
+        
     }
 }
