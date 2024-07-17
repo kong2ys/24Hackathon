@@ -44,6 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb72ec3ca259297448992163983670a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgmClip: {fileID: 0}
-  sfxClips: []
+  bgmClip: {fileID: 8300000, guid: 6b21643b8d12f5d4183e498b9c2dd35d, type: 3}
+  sfxClips:
+  - {fileID: 8300000, guid: c36fa08ef01a24023aed81ce8c980720, type: 3}
+  - {fileID: 8300000, guid: 524fb3698f9864ea4a953e57aefc11ad, type: 3}
+  - {fileID: 8300000, guid: adcbbbae313cb40978e30faf82938987, type: 3}
   channels: 4

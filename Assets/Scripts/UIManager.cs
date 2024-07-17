@@ -29,12 +29,14 @@ public class UIManager : MonoBehaviour
         inGamePanel.SetActive(true);
         deathPanel.SetActive(false);
         _playerContorller = GameObject.FindWithTag("Player").GetComponent<PlayerContorller>();
+        SoundManager.instance.PlayBgm(true);
     }
 
     public void DeathPanel()
     {
         inGamePanel.SetActive(false);
         deathPanel.SetActive(true);
+        SoundManager.instance.PlayBgm(false);
         Time.timeScale = 0;
     }
     

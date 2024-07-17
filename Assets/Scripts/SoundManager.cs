@@ -28,7 +28,8 @@ public class SoundManager : MonoBehaviour
     public enum Sfx
     {
         jump,
-        test
+        win,
+        lose
     }
 
     [Header("BGM SET")]
