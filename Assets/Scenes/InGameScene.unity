@@ -204,6 +204,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7670933173943212066, guid: 2727b8a6cf0394deab138362048f5c25,
+        type: 3}
+      propertyPath: m_CookingOptions
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -363,6 +368,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2271430333524277654, guid: 9eba3377f86fa3f43970e2f8aceee17e,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6782160493636317097, guid: 9eba3377f86fa3f43970e2f8aceee17e,
         type: 3}
       propertyPath: player
@@ -376,7 +386,7 @@ PrefabInstance:
     - target: {fileID: 6973012484403743905, guid: 9eba3377f86fa3f43970e2f8aceee17e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6973012484403743905, guid: 9eba3377f86fa3f43970e2f8aceee17e,
         type: 3}

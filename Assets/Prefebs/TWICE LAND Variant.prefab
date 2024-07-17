@@ -4541,6 +4541,11 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2991647683425853189, guid: b6a3c52ace5404214aef567953c32190,
+        type: 3}
+      propertyPath: m_CookingOptions
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7682843357740606809, guid: b6a3c52ace5404214aef567953c32190,
         type: 3}
       propertyPath: m_Name
@@ -4569,7 +4574,7 @@ PrefabInstance:
     - target: {fileID: 8655318638569095347, guid: b6a3c52ace5404214aef567953c32190,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 0.83036613
       objectReference: {fileID: 0}
     - target: {fileID: 8655318638569095347, guid: b6a3c52ace5404214aef567953c32190,
         type: 3}
