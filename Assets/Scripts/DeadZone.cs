@@ -7,6 +7,7 @@ public class DeadZone : MonoBehaviour
 {
 
     private GameManager _gameManager;
+    public GameObject player;
 
     private void Start()
     {
@@ -18,7 +19,8 @@ public class DeadZone : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("닿음");
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
+            player.SetActive(false);
             _gameManager.GameOver();
         }
     }
