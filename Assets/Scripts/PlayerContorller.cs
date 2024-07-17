@@ -116,6 +116,7 @@ public class PlayerContorller : MonoBehaviour
     private float realRealMoveSpeed;
     void Jump()
     {
+        SoundManager.instance.PlaySfx(SoundManager.Sfx.jump);
         anim.SetTrigger("isJump");
         _isJump = true;
         _rd.AddForce(transform.up * _jumpPower, ForceMode.Impulse);

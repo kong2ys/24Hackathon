@@ -19,6 +19,7 @@ public class DeadZone : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("닿음");
+            SoundManager.instance.PlaySfx(SoundManager.Sfx.lose);
             //Destroy(collision.gameObject);
             player.SetActive(false);
             _gameManager.GameOver();
