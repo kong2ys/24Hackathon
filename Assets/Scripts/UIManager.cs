@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject deathPanel;
+    public GameObject retryBtn;
+    
     private void Start()
     {
         deathPanel.SetActive(false);
     }
-
-    public GameObject deathPanel;
 
     public void StartBtn()
     {
@@ -26,5 +27,10 @@ public class UIManager : MonoBehaviour
     public void DeathPanel()
     {
         deathPanel.SetActive(true);
+    }
+
+    public void Retry()
+    {
+        deathPanel.SetActive(false);
     }
 }
