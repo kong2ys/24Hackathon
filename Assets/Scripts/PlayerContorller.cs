@@ -32,18 +32,18 @@ public class PlayerContorller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    public float forceGravity = 50f;
-    private void FixedUpdate()
-    {
-        _rd.AddForce(Vector3.down * forceGravity);
         Vector3 newRotation = transform.eulerAngles;
         newRotation.y = mainCamera.transform.eulerAngles.y;
         
         transform.eulerAngles = newRotation;
         
         Move();
+    }
+    public float forceGravity = 50f;
+    private void FixedUpdate()
+    {
+        _rd.AddForce(Vector3.down * forceGravity);
+        
     }
     
     private bool wasRunning = false;
