@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/project/wooden_barrel/Demo.unity.meta
 guid: 777f160293e972a44af47158dbd4f2e5
 DefaultImporter:
+========
+guid: 6feec462058334d079b23143a188e8a1
+NativeFormatImporter:
+>>>>>>>> main:Assets/Animations/playerController.controller.meta
   externalObjects: {}
+  mainObjectFileID: 9100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
