@@ -35,7 +35,7 @@ public class MainCamera : MonoBehaviour
     {
         if (target != null)
         {
-            if (_uiManager.deathPanel.activeSelf == false && _uiManager.pausePanel.activeSelf == false)
+            if (_uiManager.deathPanel.activeSelf == false && _uiManager.pausePanel.activeSelf == false && _uiManager.clearPannel.activeSelf == false)
             {
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
