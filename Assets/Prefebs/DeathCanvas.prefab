@@ -32,11 +32,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 198682316924937721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 18, y: -15}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: 500, y: 100}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 1, y: 1}
 --- !u!222 &5927355718282499925
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -58,14 +58,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14465404, g: 0.14465404, b: 0.14465404, a: 1}
+  m_Color: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 52752b5bed17f6244a9ea9b3ac785446, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d904372000b3154fb41a000d74a55a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1160,11 +1160,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 198682316924937721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -40, y: 30}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -50, y: 50}
   m_SizeDelta: {x: 500, y: 200}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 1, y: 1}
 --- !u!222 &8830794047532672359
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1202,8 +1202,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281743050
-  m_fontColor: {r: 0.7924528, g: 0.21181901, b: 0.21181901, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1502,11 +1502,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 198682316924937721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 210, y: 30}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 180, y: 50}
   m_SizeDelta: {x: 500, y: 200}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 1, y: 1}
 --- !u!222 &2515274497803288142
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1992,8 +1992,13 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1903420250766524466, guid: d2663dadd58734debb90e9affcfca249,
         type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903420250766524466, guid: d2663dadd58734debb90e9affcfca249,
+        type: 3}
       propertyPath: m_Color.g
-      value: 0.99215686
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1903420250766524466, guid: d2663dadd58734debb90e9affcfca249,
         type: 3}
