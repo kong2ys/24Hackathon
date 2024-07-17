@@ -34,7 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8777884996392960819}
+  - {fileID: 8015904771180068894}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5342027296562624738
@@ -123,9 +123,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
-  _moveSpeed: 5
-  _jumpPower: 20
-  forceGravity: 3
+  _moveSpeed: 7
+  _jumpPower: 30
+  forceGravity: 50
 --- !u!54 &4733069501374764058
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -153,7 +153,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 1
---- !u!1001 &5909110056915639457
+--- !u!1001 &4966935232030891916
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -166,6 +166,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6feec462058334d079b23143a188e8a1, type: 2}
+    - target: {fileID: 3157075755909196196, guid: 9b36da4f8e47ed247817fcf980805998,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3157075755909196197, guid: 9b36da4f8e47ed247817fcf980805998,
         type: 3}
       propertyPath: m_Name
@@ -241,9 +246,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b36da4f8e47ed247817fcf980805998, type: 3}
---- !u!4 &8777884996392960819 stripped
+--- !u!4 &8015904771180068894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3157075756046016402, guid: 9b36da4f8e47ed247817fcf980805998,
     type: 3}
-  m_PrefabInstance: {fileID: 5909110056915639457}
+  m_PrefabInstance: {fileID: 4966935232030891916}
   m_PrefabAsset: {fileID: 0}
