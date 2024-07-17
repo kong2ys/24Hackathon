@@ -5,10 +5,13 @@ using System.Numerics;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Vector3 = UnityEngine.Vector3;
+using UnityEngine.UI;
+using Slider = UnityEngine.UI.Slider;
 
 public class PlayerContorller : MonoBehaviour
 {
     private Vector3 startPosition;
+    
     public Slider steminaBar;
     
     private Animator anim;
