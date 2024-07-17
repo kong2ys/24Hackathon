@@ -57,7 +57,7 @@ public class PlayerContorller : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
         
-        bool isRun = Input.GetKey(KeyCode.LeftShift) ? true : false;
+        bool isRun = Input.GetKey(KeyCode.LeftShift) && !_isJump ? true : false;
         float realMoveSpeed = isRun ? _moveSpeed * 1.5f : _moveSpeed;
         anim.SetBool("isRun",isRun);
         if (!isRun)

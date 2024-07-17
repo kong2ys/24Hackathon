@@ -804,6 +804,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5960469094247408512}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &2115392859
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842840186}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 3
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0.5, z: -0.00000008940697}
 --- !u!1001 &698545671480775358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1041,6 +1064,11 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 330585545}
+    - target: {fileID: 5342027296562624738, guid: d27829be4067f4482a8aa1040085c682,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 6886153823712142266, guid: d27829be4067f4482a8aa1040085c682,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1096,10 +1124,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 904586094473206809, guid: d27829be4067f4482a8aa1040085c682, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7374631722684726965, guid: d27829be4067f4482a8aa1040085c682,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2115392859}
   m_SourcePrefab: {fileID: 100100000, guid: d27829be4067f4482a8aa1040085c682, type: 3}
 --- !u!1001 &8782350395331406713
 PrefabInstance:
