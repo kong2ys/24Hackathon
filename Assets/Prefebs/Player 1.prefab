@@ -105,6 +105,7 @@ MonoBehaviour:
   _jumpPower: 30
   stamina: 5
   maxStamina: 5
+  currentTime: 3
 --- !u!54 &1305665877526412715
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66bffdf4da4f44059ec02a6c74ae693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 15
+  jumpForce: 25
 --- !u!64 &788329583534416708
 MeshCollider:
   m_ObjectHideFlags: 0
