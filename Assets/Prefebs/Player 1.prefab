@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4467b7f201806434abb282379b9083da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  steminaBar: {fileID: 8389114079751581448, guid: d2663dadd58734debb90e9affcfca249,
+    type: 3}
   mainCamera: {fileID: 0}
   _moveSpeed: 7
   _jumpPower: 30
