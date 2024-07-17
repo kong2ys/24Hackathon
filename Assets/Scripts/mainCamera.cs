@@ -24,20 +24,23 @@ public class MainCamera : MonoBehaviour
     
     void LateUpdate()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        if (target != null)
+        {
+            // Cursor.visible = false;
+            // Cursor.lockState = CursorLockMode.Locked;
 
-        Yaxis = Yaxis + Input.GetAxis("Mouse X") * rotSensitive;
-        Xaxis = Xaxis - Input.GetAxis("Mouse Y") * rotSensitive;
+            Yaxis = Yaxis + Input.GetAxis("Mouse X") * rotSensitive;
+            Xaxis = Xaxis - Input.GetAxis("Mouse Y") * rotSensitive;
          
 
-        Xaxis = Mathf.Clamp(Xaxis,RotationMin,RotationMax);
+            Xaxis = Mathf.Clamp(Xaxis,RotationMin,RotationMax);
         
 
-        targetRotation = Vector3.SmoothDamp(targetRotation,new Vector3(Xaxis,Yaxis),ref currentVel,smoothTime);
-        transform.eulerAngles=targetRotation;
+            targetRotation = Vector3.SmoothDamp(targetRotation,new Vector3(Xaxis,Yaxis),ref currentVel,smoothTime);
+            transform.eulerAngles=targetRotation;
 
 
-        transform.position = target.position - transform.forward*dis + new Vector3(0,1,0);
+            transform.position = target.position - transform.forward*dis + new Vector3(0,1,0);
+        }
     }
 }
