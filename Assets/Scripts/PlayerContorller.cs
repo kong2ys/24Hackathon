@@ -6,13 +6,13 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Vector3 = UnityEngine.Vector3;
 using UnityEngine.UI;
-using Slider = UnityEngine.UI.Slider;
+using Slider = UnityEngine.UI;
 
 public class PlayerContorller : MonoBehaviour
 {
     private Vector3 startPosition;
-    
-    public Slider steminaBar;
+
+    public Slider.Slider slider;
     
     private Animator anim;
     private Rigidbody _rd;
@@ -42,7 +42,7 @@ public class PlayerContorller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        steminaBar.value =  stamina / maxStamina;
+        slider.value =  stamina / maxStamina;
         if (stamina <= maxStamina)
         {
             if (currentTime >= 0)
