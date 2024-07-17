@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    
     public GameObject deathPanel;
     public GameObject pausePanel;
     public GameObject retryBtn;
@@ -13,6 +15,8 @@ public class UIManager : MonoBehaviour
     public GameObject homeBtn;
     public GameObject continueBtn;
 
+    public TextMeshProUGUI deathCount;
+    
     private PlayerContorller _playerContorller;
     
     private void Start()
@@ -54,9 +58,12 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        
         if (Input.GetButton("Cancel"))
         {
             Pause();
         }
+
+        deathCount.text = GameManager.instance.DethCount.ToString();
     }
 }
