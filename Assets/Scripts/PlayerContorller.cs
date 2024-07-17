@@ -39,13 +39,6 @@ public class PlayerContorller : MonoBehaviour
         
         Move();
     }
-    public float forceGravity = 50f;
-    private void FixedUpdate()
-    {
-        _rd.AddForce(Vector3.down * forceGravity);
-        
-    }
-    
     private bool wasRunning = false;
     private float jumpSpeed = 0f;
 
