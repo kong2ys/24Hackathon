@@ -10,6 +10,7 @@ public class DeadZone : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("닿음");
+            Destroy(collision.gameObject);
         }
     }
 }
