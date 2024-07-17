@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    
+    public GameObject ClearPannel;
     public GameObject deathPanel;
     public GameObject inGamePanel;
     public GameObject pausePanel;
@@ -57,6 +57,7 @@ public class UIManager : MonoBehaviour
         inGamePanel.SetActive(true);
         player.SetActive(true);
         deathPanel.SetActive(false);
+        ClearPannel.SetActive(false);
         _playerContorller.init();
     }
 
