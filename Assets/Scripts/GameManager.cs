@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private int DethCount = 0;
+    public int DethCount = 0;
 
     private UIManager _uiManager;
     
@@ -40,10 +40,5 @@ public class GameManager : MonoBehaviour
         DethCount += 1;
         _uiManager.DeathPanel();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
