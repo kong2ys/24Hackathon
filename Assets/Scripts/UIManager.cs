@@ -7,30 +7,41 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public GameObject deathPanel;
+    public GameObject pausePanel;
     public GameObject retryBtn;
     public GameObject player;
+    public GameObject homeBtn;
+    public GameObject continueBtn;
 
     private PlayerContorller _playerContorller;
     
     private void Start()
     {
         deathPanel.SetActive(false);
-        _playerContorller = GameObject.Find("Player").GetComponent<PlayerContorller>();
-    }
-
-    public void StartBtn()
-    {
-        SceneManager.LoadScene("InGameScene");
-    }
-
-    public void ExitBtn()
-    {
-        Application.Quit();
+        _playerContorller = GameObject.FindWithTag("Player").GetComponent<PlayerContorller>();
     }
 
     public void DeathPanel()
     {
         deathPanel.SetActive(true);
+    }
+    
+    public void Pause()
+    {
+        pausePanel.SetActive(true);
+        Time.timeScale = 0; // game stop
+    }
+
+    public void OnClickContinue()
+    {
+        pausePanel.SetActive(false);
+        Time.timeScale = 1; // game continue
+    }
+
+    public void OnClickHome()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("StartScene");
     }
 
     public void Retry()
@@ -39,5 +50,13 @@ public class UIManager : MonoBehaviour
         player.SetActive(true);
         deathPanel.SetActive(false);
         _playerContorller.init();
+    }
+
+    private void Update()
+    {
+        if (Input.GetButton("Cancel"))
+        {
+            Pause();
+        }
     }
 }
