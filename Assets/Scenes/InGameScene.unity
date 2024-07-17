@@ -1112,6 +1112,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8463325645623394516, guid: b49ab9b9631889b468b45317d55c78ee,
+        type: 3}
+      propertyPath: bgmClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a66e0412c967e4d08b9e2b6315193d44, type: 3}
+    - target: {fileID: 8463325645623394516, guid: b49ab9b9631889b468b45317d55c78ee,
+        type: 3}
+      propertyPath: sfxClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8463325645623394516, guid: b49ab9b9631889b468b45317d55c78ee,
+        type: 3}
+      propertyPath: sfxClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c36fa08ef01a24023aed81ce8c980720, type: 3}
+    - target: {fileID: 8463325645623394516, guid: b49ab9b9631889b468b45317d55c78ee,
+        type: 3}
+      propertyPath: sfxClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 524fb3698f9864ea4a953e57aefc11ad, type: 3}
+    - target: {fileID: 8463325645623394516, guid: b49ab9b9631889b468b45317d55c78ee,
+        type: 3}
+      propertyPath: sfxClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: adcbbbae313cb40978e30faf82938987, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
