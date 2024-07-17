@@ -9,6 +9,8 @@ using Vector3 = UnityEngine.Vector3;
 public class PlayerContorller : MonoBehaviour
 {
     private Vector3 startPosition;
+    public Slider steminaBar;
+    
     private Animator anim;
     private Rigidbody _rd;
 
@@ -37,7 +39,7 @@ public class PlayerContorller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        steminaBar.value =  stamina / maxStamina;
         if (stamina <= maxStamina)
         {
             if (currentTime >= 0)
