@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject ClearPannel;
+    public GameObject clearPannel;
     public GameObject deathPanel;
     public GameObject inGamePanel;
     public GameObject pausePanel;
@@ -57,8 +57,16 @@ public class UIManager : MonoBehaviour
         inGamePanel.SetActive(true);
         player.SetActive(true);
         deathPanel.SetActive(false);
-        ClearPannel.SetActive(false);
+        clearPannel.SetActive(false);
         _playerContorller.init();
+    }
+
+    public void Clear()
+    {
+        Debug.Log("클리어");
+        inGamePanel.SetActive(false);
+        Time.timeScale = 0;
+        clearPannel.SetActive(true);
     }
 
     private void Update()
