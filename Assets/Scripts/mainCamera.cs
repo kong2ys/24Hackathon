@@ -26,8 +26,8 @@ public class MainCamera : MonoBehaviour
     {
         if (target != null)
         {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
+            // Cursor.visible = false;
+            // Cursor.lockState = CursorLockMode.Locked;
 
             Yaxis = Yaxis + Input.GetAxis("Mouse X") * rotSensitive;
             Xaxis = Xaxis - Input.GetAxis("Mouse Y") * rotSensitive;
