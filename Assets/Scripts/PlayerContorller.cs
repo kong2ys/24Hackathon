@@ -48,6 +48,7 @@ public class PlayerContorller : MonoBehaviour
 
     void Move()
     {
+        anim.SetBool("isIdle",_isJump);
         if (Input.GetKeyDown(KeyCode.Space) && !_isJump)
         {
             Jump();
