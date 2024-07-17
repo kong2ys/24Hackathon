@@ -4303,17 +4303,22 @@ PrefabInstance:
     - target: {fileID: -4819223349682164798, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_Name
       value: badBed (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 8449996119470504636, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
@@ -4328,6 +4333,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4071143837248587941}
+    - targetCorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4252040237433393420}
     - targetCorrespondingSourceObject: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       insertIndex: -1
@@ -4367,6 +4376,34 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4351916430419773438}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5973156731454175807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+    type: 3}
+  m_PrefabInstance: {fileID: 4351916430419773438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4252040237433393420
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5973156731454175807}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5585209230499877560, guid: d3e44c8ffaf4940a38c85c4ce1f08d75, type: 3}
 --- !u!1 &6300887911781980901 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
@@ -5119,17 +5156,22 @@ PrefabInstance:
     - target: {fileID: -4819223349682164798, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_Name
       value: badBed (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 8449996119470504636, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
@@ -5144,6 +5186,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8614518556130268270}
+    - targetCorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3455727597905774378}
     - targetCorrespondingSourceObject: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       insertIndex: -1
@@ -5176,6 +5222,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011711842, y: 0.019449655, z: 0.0013624626}
   m_Center: {x: 3.514758e-17, y: -0.000000007450581, z: 0.0032977206}
+--- !u!1 &2749355572285838245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+    type: 3}
+  m_PrefabInstance: {fileID: 5234971511194054244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3455727597905774378
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2749355572285838245}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5585209230499877560, guid: d3e44c8ffaf4940a38c85c4ce1f08d75, type: 3}
 --- !u!4 &5705185134517389711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
@@ -5574,17 +5648,22 @@ PrefabInstance:
     - target: {fileID: -4819223349682164798, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_Name
       value: badBed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 8449996119470504636, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
@@ -5599,11 +5678,43 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4321256383996505534}
+    - targetCorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6594720913942863012}
     - targetCorrespondingSourceObject: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4135286689263262444}
   m_SourcePrefab: {fileID: 100100000, guid: d3e44c8ffaf4940a38c85c4ce1f08d75, type: 3}
+--- !u!1 &2541790076190436359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+    type: 3}
+  m_PrefabInstance: {fileID: 5604648452020883910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6594720913942863012
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2541790076190436359}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5585209230499877560, guid: d3e44c8ffaf4940a38c85c4ce1f08d75, type: 3}
 --- !u!1 &2797837976924572893 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
@@ -5804,17 +5915,22 @@ PrefabInstance:
     - target: {fileID: -4819223349682164798, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_Name
       value: badBed (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 8449996119470504636, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
@@ -5829,11 +5945,43 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6344905244906972720}
+    - targetCorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1962186893259572309}
     - targetCorrespondingSourceObject: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6060984554715338814}
   m_SourcePrefab: {fileID: 100100000, guid: d3e44c8ffaf4940a38c85c4ce1f08d75, type: 3}
+--- !u!1 &2413981051508634188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+    type: 3}
+  m_PrefabInstance: {fileID: 5693069379737374605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1962186893259572309
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2413981051508634188}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5585209230499877560, guid: d3e44c8ffaf4940a38c85c4ce1f08d75, type: 3}
 --- !u!1 &2600130266440422038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
@@ -6398,17 +6546,22 @@ PrefabInstance:
     - target: {fileID: -4819223349682164798, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       propertyPath: m_Name
       value: badBed (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 8449996119470504636, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
@@ -6423,6 +6576,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1039490451983704584}
+    - targetCorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2016026416769835263}
     - targetCorrespondingSourceObject: {fileID: -1507477980391531237, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
         type: 3}
       insertIndex: -1
@@ -6455,6 +6612,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011711842, y: 0.019449655, z: 0.0013624626}
   m_Center: {x: 3.514758e-17, y: -0.000000007450581, z: 0.0032977206}
+--- !u!1 &3819724969785904141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7962916688487546305, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
+    type: 3}
+  m_PrefabInstance: {fileID: 6594278204252565964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2016026416769835263
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3819724969785904141}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5585209230499877560, guid: d3e44c8ffaf4940a38c85c4ce1f08d75, type: 3}
 --- !u!4 &6631880767644259879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d3e44c8ffaf4940a38c85c4ce1f08d75,
