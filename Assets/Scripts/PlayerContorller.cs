@@ -18,6 +18,8 @@ public class PlayerContorller : MonoBehaviour
     private bool _isJump = false;
 
     private bool _isMove = false;
+
+    private bool _isRun = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,25 +41,27 @@ public class PlayerContorller : MonoBehaviour
     private void FixedUpdate()
     {
         _rd.AddForce(Vector3.down * forceGravity);
+        
     }
 
     void Move()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
-        anim.SetBool("isMove",dir != Vector3.zero);
-        
-        bool isRun = Input.GetKey(KeyCode.LeftShift) ? true : false;
-        float realMoveSpeed = isRun ? _moveSpeed * 1.5f : _moveSpeed;
-
-        transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * realMoveSpeed * Time.deltaTime);
-        
-        
         if (Input.GetKeyUp(KeyCode.Space) && !_isJump)
         {
             Jump();
         }
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
+        
+        bool isRun = Input.GetKey(KeyCode.LeftShift) ? true : false;
+        float realMoveSpeed = isRun ? _moveSpeed * 1.5f : _moveSpeed;
+        anim.SetBool("isRun",isRun);
+        if (!isRun)
+        {
+            anim.SetBool("isMove",dir != Vector3.zero);    
+        }
+        transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * realMoveSpeed * Time.deltaTime);
     }
     void Jump()
     {
