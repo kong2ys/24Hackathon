@@ -23,7 +23,7 @@ public class MainCamera : MonoBehaviour
     private Vector3 targetRotation;
     private Vector3 currentVel;
     
-    void FixedUpdate()
+    void LateUpdate()
     {
         if (target != null)
         {
