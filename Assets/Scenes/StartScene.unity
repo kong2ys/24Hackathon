@@ -785,6 +785,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 273435951563674288, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 273435951563674288, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 273435951563674288, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 520058487813596750, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 520058487813596750, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 884186974980997865, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 884186974980997865, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 895139752885145604, guid: 5a98ded8d43a13140bef148c2a784aad,
         type: 3}
       propertyPath: player
@@ -900,6 +935,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2341507706560900889, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341507706560900889, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2552742341669525795, guid: 5a98ded8d43a13140bef148c2a784aad,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -914,6 +959,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: StartSet, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3541982067545694954, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3541982067545694954, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4198858371227681467, guid: 5a98ded8d43a13140bef148c2a784aad,
         type: 3}
@@ -949,6 +1004,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223190465085445428, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223190465085445428, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223190465085445428, guid: 5a98ded8d43a13140bef148c2a784aad,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 895139752885145604, guid: 5a98ded8d43a13140bef148c2a784aad, type: 3}
