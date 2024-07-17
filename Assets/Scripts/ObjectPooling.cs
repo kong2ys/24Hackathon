@@ -11,10 +11,11 @@ public class ObjectPooling : MonoBehaviour
     private GameObject t_rash;//생성될 쓰레기
     public Vector3[] spwnPostion;
     private bool isWating = false;
-
+    private Rigidbody _rd;
     // Start is called before the first frame update
     void Start()
     {
+       
         trashObjectsPool = new GameObject[poolSize];
         for (int i = 0; i < poolSize; i++)
         {
@@ -40,14 +41,20 @@ public class ObjectPooling : MonoBehaviour
             for (int i = 0; i < poolSize; i++)
             {
                 t_rash = trashObjectsPool[i];
-                if (t_rash.activeSelf == false)
+                if (!t_rash.activeSelf)
                 {
                     t_rash.transform.position = spwnPostion[j];
+                    _rd = t_rash.GetComponent<Rigidbody>(); // 각 오브젝트의 Rigidbody를 가져옴
+                    if (_rd != null)
+                    {
+                        _rd.velocity = Vector3.zero; // 속도 초기화
+                    }
                     t_rash.SetActive(true);
                     isWating = true;
                     break;
                 }
-            }  
+            }
+
             yield return new WaitForSeconds(delayTime);
             isWating = false;
         }
