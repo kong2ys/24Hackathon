@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mainCamera : MonoBehaviour
+public class MainCamera : MonoBehaviour
 {
     public float Yaxis;
     public float Xaxis;
