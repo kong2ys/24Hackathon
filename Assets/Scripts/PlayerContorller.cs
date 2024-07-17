@@ -80,6 +80,7 @@ public class PlayerContorller : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        
         if (other.gameObject.CompareTag("Ground"))
         {
             _isJump = false;
