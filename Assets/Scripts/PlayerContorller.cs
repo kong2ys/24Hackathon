@@ -18,12 +18,17 @@ public class PlayerContorller : MonoBehaviour
 
     private bool _isJump = false;
 
+    public float stamina = 5f;
+    public float maxStamina = 5f;
+    public float currentTime = 3f;
+
     private bool _isMove = false;
 
     private bool _isRun = false;
     // Start is called before the first frame update
     void Start()
     {
+        stamina = maxStamina;
         startPosition = transform.position;
         anim = GetComponentInChildren<Animator>();
         _rd = GetComponent<Rigidbody>();
@@ -32,6 +37,18 @@ public class PlayerContorller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        if (stamina <= maxStamina)
+        {
+            if (currentTime >= 0)
+            {
+                currentTime -= 1 * Time.deltaTime;    
+            }
+            if (currentTime <= 0)
+            {
+                stamina += 1f * Time.deltaTime;    
+            }
+        }
         Vector3 newRotation = transform.eulerAngles;
         newRotation.y = mainCamera.transform.eulerAngles.y;
         
@@ -57,8 +74,13 @@ public class PlayerContorller : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
-
-        bool isRun = Input.GetKey(KeyCode.LeftShift) && !_isJump;
+        
+        bool isRun = Input.GetKey(KeyCode.LeftShift) && !_isJump && stamina >= 0;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            stamina -= 1f * Time.deltaTime;
+            currentTime = 3f;
+        }
         float realMoveSpeed = isRun ? _moveSpeed * 1.5f : _moveSpeed;
 
         anim.SetBool("isRun", isRun);
