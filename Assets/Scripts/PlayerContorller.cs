@@ -32,6 +32,12 @@ public class PlayerContorller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+    public float forceGravity = 50f;
+    private void FixedUpdate()
+    {
+        _rd.AddForce(Vector3.down * forceGravity);
         Vector3 newRotation = transform.eulerAngles;
         newRotation.y = mainCamera.transform.eulerAngles.y;
         
@@ -39,38 +45,54 @@ public class PlayerContorller : MonoBehaviour
         
         Move();
     }
-    public float forceGravity = 50f;
-    private void FixedUpdate()
-    {
-        _rd.AddForce(Vector3.down * forceGravity);
-        
-    }
+    
+    private bool wasRunning = false;
+    private float jumpSpeed = 0f;
 
     void Move()
     {
-        anim.SetBool("isIdle",_isJump);
+        anim.SetBool("isIdle", _isJump);
+
         if (Input.GetKeyDown(KeyCode.Space) && !_isJump)
         {
+            
+            wasRunning = Input.GetKey(KeyCode.LeftShift);
+            jumpSpeed = wasRunning ? _moveSpeed * 1.5f : _moveSpeed;
             Jump();
         }
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
-        
-        bool isRun = Input.GetKey(KeyCode.LeftShift) && !_isJump ? true : false;
+
+        bool isRun = Input.GetKey(KeyCode.LeftShift) && !_isJump;
         float realMoveSpeed = isRun ? _moveSpeed * 1.5f : _moveSpeed;
-        anim.SetBool("isRun",isRun);
+
+        anim.SetBool("isRun", isRun);
         if (!isRun)
         {
-            anim.SetBool("isMove",dir != Vector3.zero);    
+            anim.SetBool("isMove", dir != Vector3.zero);
         }
-        transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * realMoveSpeed * Time.deltaTime);
+
+        if (_isJump)
+        {
+            // 유지된 속도로 이동
+            transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * jumpSpeed * Time.deltaTime);
+        }
+        else
+        {
+            // 일반적인 이동
+            transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * realMoveSpeed * Time.deltaTime);
+        }
     }
+
 
     public void init()
     {
         transform.position = startPosition;
     }
+
+    private float realRealMoveSpeed;
     void Jump()
     {
         anim.SetTrigger("isJump");
