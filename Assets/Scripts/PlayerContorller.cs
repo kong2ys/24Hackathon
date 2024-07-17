@@ -43,13 +43,15 @@ public class PlayerContorller : MonoBehaviour
 
     void Move()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
         Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
         anim.SetBool("isMove",dir != Vector3.zero);
+        
+        bool isRun = Input.GetKey(KeyCode.LeftShift) ? true : false;
+        float realMoveSpeed = isRun ? _moveSpeed * 1.5f : _moveSpeed;
 
-
-        transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * _moveSpeed * Time.deltaTime);
+        transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * realMoveSpeed * Time.deltaTime);
         
         
         if (Input.GetKeyUp(KeyCode.Space) && !_isJump)

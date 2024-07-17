@@ -38,6 +38,6 @@ public class MainCamera : MonoBehaviour
         transform.eulerAngles=targetRotation;
 
 
-        transform.position = target.position - transform.forward*dis + new Vector3(0,2,0);
+        transform.position = target.position - transform.forward*dis + new Vector3(0,1,0);
     }
 }
