@@ -100,8 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4467b7f201806434abb282379b9083da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steminaBar: {fileID: 8389114079751581448, guid: d2663dadd58734debb90e9affcfca249,
-    type: 3}
+  slider: {fileID: 0}
   mainCamera: {fileID: 0}
   _moveSpeed: 7
   _jumpPower: 30
@@ -147,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66bffdf4da4f44059ec02a6c74ae693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 25
+  jumpForce: 30
 --- !u!64 &788329583534416708
 MeshCollider:
   m_ObjectHideFlags: 0
