@@ -48,7 +48,7 @@ public class PlayerContorller : MonoBehaviour
 
     void Move()
     {
-        if (Input.GetKeyUp(KeyCode.Space) && !_isJump)
+        if (Input.GetKeyDown(KeyCode.Space) && !_isJump)
         {
             Jump();
         }
