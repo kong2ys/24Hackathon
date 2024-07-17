@@ -8,6 +8,7 @@ using Vector3 = UnityEngine.Vector3;
 
 public class PlayerContorller : MonoBehaviour
 {
+    private Vector3 startPosition;
     private Animator anim;
     private Rigidbody _rd;
 
@@ -23,6 +24,7 @@ public class PlayerContorller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        startPosition = transform.position;
         anim = GetComponentInChildren<Animator>();
         _rd = GetComponent<Rigidbody>();
     }
@@ -62,6 +64,11 @@ public class PlayerContorller : MonoBehaviour
             anim.SetBool("isMove",dir != Vector3.zero);    
         }
         transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * realMoveSpeed * Time.deltaTime);
+    }
+
+    public void init()
+    {
+        transform.position = startPosition;
     }
     void Jump()
     {
