@@ -37,6 +37,7 @@ public class UIManager : MonoBehaviour
         inGamePanel.SetActive(false);
         deathPanel.SetActive(true);
         SoundManager.instance.PlayBgm(false);
+        SoundManager.instance.PlaySfx(SoundManager.Sfx.lose);
         Time.timeScale = 0;
     }
     
@@ -66,6 +67,7 @@ public class UIManager : MonoBehaviour
         deathPanel.SetActive(false);
         clearPannel.SetActive(false);
         _playerContorller.init();
+        SoundManager.instance.PlayBgm(true);
         Time.timeScale = 1;
     }
 
@@ -75,6 +77,7 @@ public class UIManager : MonoBehaviour
         inGamePanel.SetActive(false);
         Time.timeScale = 0;
         clearPannel.SetActive(true);
+        SoundManager.instance.PlaySfx(SoundManager.Sfx.win);
     }
 
     private void Update()
