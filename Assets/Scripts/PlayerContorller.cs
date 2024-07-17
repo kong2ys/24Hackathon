@@ -109,6 +109,7 @@ public class PlayerContorller : MonoBehaviour
 
     public void init()
     {
+        stamina = maxStamina;
         transform.position = startPosition;
     }
 
