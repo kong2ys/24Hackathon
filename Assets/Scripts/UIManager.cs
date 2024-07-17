@@ -54,6 +54,7 @@ public class UIManager : MonoBehaviour
     public void Retry()
     {
         Debug.Log("클릭함");
+        inGamePanel.SetActive(true);
         player.SetActive(true);
         deathPanel.SetActive(false);
         _playerContorller.init();
