@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Vector3 = UnityEngine.Vector3;
 
 public class PlayerContorller : MonoBehaviour
 {
@@ -26,9 +28,6 @@ public class PlayerContorller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        anim.SetBool("isMove",_isMove);
-        Debug.Log(_isMove);
-        
         Vector3 newRotation = transform.eulerAngles;
         newRotation.y = mainCamera.transform.eulerAngles.y;
         
@@ -46,13 +45,10 @@ public class PlayerContorller : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        if (vertical != 0 && horizontal != 0)
-        {
-            _isMove = true;
-        }
-        
-        // Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
-        
+        Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
+        anim.SetBool("isMove",dir != Vector3.zero);
+
+
         transform.Translate(((Vector3.forward * vertical) + (Vector3.right * horizontal)).normalized * _moveSpeed * Time.deltaTime);
         
         
@@ -63,6 +59,7 @@ public class PlayerContorller : MonoBehaviour
     }
     void Jump()
     {
+        anim.SetTrigger("isJump");
         _isJump = true;
         _rd.AddForce(transform.up * _jumpPower, ForceMode.Impulse);
     }
