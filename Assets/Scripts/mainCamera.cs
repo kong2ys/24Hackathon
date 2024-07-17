@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,16 +23,29 @@ public class MainCamera : MonoBehaviour
     
     private Vector3 targetRotation;
     private Vector3 currentVel;
-    
+
+    private UIManager _uiManager;
+
+    private void Start()
+    {
+        _uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
+    }
+
     void LateUpdate()
     {
         if (target != null)
         {
-            // if (!EventSystem.current.currentSelectedGameObject)
-            // {
-            //     Cursor.visible = false;
-            //     Cursor.lockState = CursorLockMode.Locked;
-            // }
+            if (_uiManager.deathPanel.activeSelf == false && _uiManager.pausePanel.activeSelf == false)
+            {
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+            else
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
+            
             if (target.gameObject.activeSelf == true)
             {
                 Yaxis = Yaxis + Input.GetAxis("Mouse X") * rotSensitive;
