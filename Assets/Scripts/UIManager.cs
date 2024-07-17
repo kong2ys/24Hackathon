@@ -35,6 +35,7 @@ public class UIManager : MonoBehaviour
     {
         inGamePanel.SetActive(false);
         deathPanel.SetActive(true);
+        Time.timeScale = 0;
     }
     
     public void Pause()
@@ -63,6 +64,7 @@ public class UIManager : MonoBehaviour
         deathPanel.SetActive(false);
         clearPannel.SetActive(false);
         _playerContorller.init();
+        Time.timeScale = 1;
     }
 
     public void Clear()
