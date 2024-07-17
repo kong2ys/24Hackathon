@@ -735,6 +735,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 372730452}
+    - target: {fileID: 3864426350471748841, guid: 2231bae742e0a484bb76c291ae86da39,
+        type: 3}
+      propertyPath: gameTime
+      value: 
+      objectReference: {fileID: 526133624}
     - target: {fileID: 6421866143843070745, guid: 2231bae742e0a484bb76c291ae86da39,
         type: 3}
       propertyPath: m_AnchorMax.x
