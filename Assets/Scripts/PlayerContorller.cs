@@ -29,7 +29,7 @@ public class PlayerContorller : MonoBehaviour
 
     private bool _isMove = false;
 
-    private bool _isRun = false;
+    public bool _isRun = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,16 +80,16 @@ public class PlayerContorller : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 dir = new Vector3(horizontal, 0, vertical).normalized;
         
-        bool isRun = Input.GetKey(KeyCode.LeftShift) && !_isJump && stamina >= 0;
+        _isRun = Input.GetKey(KeyCode.LeftShift) && !_isJump && stamina >= 0;
         if (Input.GetKey(KeyCode.LeftShift))
         {
             stamina -= 1f * Time.deltaTime;
             currentTime = 3f;
         }
-        float realMoveSpeed = isRun ? _moveSpeed * 1.5f : _moveSpeed;
+        float realMoveSpeed = _isRun ? _moveSpeed * 1.5f : _moveSpeed;
 
-        anim.SetBool("isRun", isRun);
-        if (!isRun)
+        anim.SetBool("isRun", _isRun);
+        if (!_isRun)
         {
             anim.SetBool("isMove", dir != Vector3.zero);
         }

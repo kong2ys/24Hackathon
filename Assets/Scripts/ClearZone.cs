@@ -10,7 +10,6 @@ public class ClearZone : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SoundManager.instance.PlaySfx(SoundManager.Sfx.win);
             ClearPannel.gameObject.SetActive(true);
         }
     }
