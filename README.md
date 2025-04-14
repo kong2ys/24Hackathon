@@ -1,5 +1,5 @@
 # OnlyTrash!
-
+![Image](https://github.com/user-attachments/assets/359cfd3a-a15b-4e89-b4fe-874c8eef9a87)
 **OnlyTrash!**는 Unity 3D URP(Universal Render Pipeline)로 제작된 하드코어 점프 게임입니다. 대구소프트웨어마이스터고 2024년 해커톤에서 하루 만에 개발된 프로젝트로, WASD 키를 사용하여 이동하고 `Spacebar`로 점프할 수 있습니다. UI에는 진행 시간과 죽은 횟수가 표시됩니다.
 
 ---
