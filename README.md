@@ -48,5 +48,6 @@ OnlyTrash!는 Unity 3D URP(Universal Render Pipeline)로 제작된 하드코어 
 ---
 
 ## 라이선스 (License)
+본 프로젝트는 단순 학습의 비상업적 용도로 제작되었습니다.
 
-이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 `LICENSE` 파일을 참조하세요.
+본 프로젝트는 **MIT 라이선스** 하에 배포됩니다.  
